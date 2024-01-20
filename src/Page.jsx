@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import mainPhoto from './assets/main-photo.jpeg';
 import DonationBar from './components/DonationBar';
 import DefaultButton from './components/DefaultButton';
+import OptionsSection from './components/OptionsSection';
 
 function Page() {
     const donationData = {
@@ -22,6 +23,7 @@ function Page() {
             <img className='main-photo' src={mainPhoto}></img>
         </div>
         <div className='funding-goal'>
+        <span className='title' id='align-left'>Description</span>
             <span className='subtitle'>Join us in fostering a mindful revolution! With your support, we'll create initiatives, workshops, and educational programs to bring mindfulness to the forefront of mental health discussions. Together, let's empower individuals to navigate life's challenges with resilience and peace.
 </span>
             <DonationBar totalGoal={donationData.totalGoal} currentAmount={donationData.currentAmount}/>
@@ -29,6 +31,9 @@ function Page() {
             <DefaultButton/>
         </div>
     </div>
+    </div>
+    <div className='options-div'>
+        <OptionsSection/>
     </div>
     </>
   )

@@ -56,12 +56,18 @@ body {
 }
 
 .funding-goal {
-    width: 60rem;
+    width: 75vw;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-left: 2.5vw;
     padding-right: 2.5vw;
+}
+
+#align-left {
+    text-align: left !important;
+    display: flex;
+    align-self: start;
 }
 
 .subtitle {
@@ -74,6 +80,12 @@ body {
         text-align: center;
     }
 
+    #align-left {
+        text-align: center !important;
+        display: flex;
+        align-self: center;
+    }    
+
     .sub-section-container {
         flex-direction: column;
         align-items: center;
@@ -81,6 +93,10 @@ body {
 
     .funding-goal {
         margin-top: 5vh;
+    }
+
+    .subtitle {
+        font-size: 120%;
     }
 
     .img-container {
@@ -108,6 +124,15 @@ body {
     .img-container {
         padding: 0;
     }
+}
+
+.options-div {
+    width: 100%;
+    height: 20vh;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -139,4 +164,138 @@ body {
     .subtitle {
         font-size: 1rem; /* Keep font size constant for smaller screens */
     }
+}
+
+@media(max-width: 1000px) {
+    .img-container {
+        height: 20rem;
+        width: 45rem; 
+        margin-bottom: 10rem;
+    }
+    .main-photo {
+        height: 30rem; 
+        border-radius: 1.5rem;
+        opacity: 90%;
+        transition: all ease-in-out 0.4s;
+    }
+
+}
+
+@media(max-width: 750px) {
+    .img-container {
+        height: 15rem;
+        width: 40rem; 
+        margin-bottom: 13rem;
+    }
+    .main-photo {
+        height: 25rem; 
+    }
+
+}
+
+@media(max-width: 750px) {
+    .img-container {
+        width: 37rem; 
+        margin-bottom: 10rem;
+    }
+    .main-photo {
+        height: 25rem; 
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 675px) {
+    .img-container {
+        width: 35rem; 
+        margin-bottom: 7.5rem;
+    }
+    .main-photo {
+        height: 23rem; 
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .img-container {
+        width: 33.5rem; 
+        margin-bottom: 6rem;
+    }
+    .main-photo {
+        height: 21.5rem; 
+        width: 100%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+}
+
+@media(max-width: 560px) {
+    .img-container {
+        width: 25rem; 
+        margin-bottom: 2.5rem;
+    }
+    .main-photo {
+        height: 17.5rem; 
+        width: 100%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+}
+
+@media(max-width: 475px) {
+   .funding-goal {
+    width: 90vw;
+   }
+
+   .title {
+    font-size: 1.75rem;
+   }
+}
+
+@media(max-width: 420px) {
+    .img-container {
+        width: 22.5rem; 
+        margin-bottom: 1.5rem;
+    }
+    .main-photo {
+        height: 15em; 
+        width: 100%;
+    }
+}
+
+@media(max-width: 375px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    .img-container {
+        width: 20rem; 
+        margin-bottom: 1.5rem;
+    }
+    .main-photo {
+        height: 15em; 
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 280px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    .img-container {
+        width: 15rem; 
+        margin-bottom: 0rem;
+    }
+    .main-photo {
+        height: 12.5rem; 
+        width: 100%;
+    }
+
 }
