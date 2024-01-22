@@ -8,6 +8,18 @@
   box-sizing: border-box;
 }
 
+#selected {
+  background-color: white;
+  border: 2px solid black;
+  transition: all ease-in-out 0.5s;
+}
+
+.selected-text {
+  color: black;
+  transition: all ease-in-out 1s;
+
+}
+
 .btn-17 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
@@ -128,7 +140,7 @@
   --progress: 0%;
   left: calc(50% + 50% * var(--skew));
   top: 102%;
-  z-index: -1;
+  z-index: -1;  
 }
 
 .btn-17:hover:before {

@@ -3,11 +3,11 @@ import "./component-styles.css"
 
 function DefaultButton() {
   return (
-    <button class="learn-more">
-    <span class="circle" aria-hidden="true">
-    <span class="icon arrow"></span>
+    <button className="learn-more">
+    <span className="circle" aria-hidden="true">
+    <span className="icon arrow"></span>
     </span>
-    <span class="button-text">Learn More</span>
+    <span className="button-text">Learn More</span>
     </button>
   )
 }
