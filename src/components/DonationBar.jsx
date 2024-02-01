@@ -9,7 +9,7 @@ const DonationBar = ({ totalGoal, currentAmount }) => {
   const percentage = (currentAmountValue / totalGoalAmount) * 100;
 
   const barStyle = {
-    width: '35vw',
+    width: '80%',
     height: '0.5rem',
     marginTop: "2rem",
     backgroundColor: '#f0f0f0',

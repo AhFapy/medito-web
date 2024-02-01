@@ -150,3 +150,59 @@
 .btn-17:hover:after {
   --progress: -102%;
 }
+.options-div {
+  width: 100%;
+  height: 20vh;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.selected-wrapper {
+  width: 100%;
+}
+
+@media(max-width: 770px) {
+  .options-div {
+    display: flex;
+    justify-content: center;  
+    height: 30vh;
+    flex-direction: column;
+  }
+  .btn-17 {
+    margin-bottom: 1rem;
+    width: 25rem;
+  }
+
+  #selected {
+    width: 25rem;
+  }
+  
+}
+
+@media(max-width: 450px) {
+  .btn-17 {
+    margin-bottom: 1rem;
+    width: 15rem;
+    font-size: 0.75rem;
+  }
+
+  #selected {
+    width: 15rem;
+  }
+  
+}
+
+@media(max-width: 270px) {
+  .btn-17 {
+    margin-bottom: 1rem;
+    width: 12.5rem;
+    font-size: 0.65rem;
+  }
+
+  #selected {
+    width: 12.5rem;
+  }
+  
+}

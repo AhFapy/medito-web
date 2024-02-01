@@ -1,6 +1,8 @@
 import React from 'react'
 import "./option-button-styles.css"
 import { useState } from 'react'
+import Donate from "./OptionsSections/Donate"
+import About from './OptionsSections/About';
 
 function OptionsButton(props) {
   const id = props.selected;
@@ -17,7 +19,7 @@ function OptionsButton(props) {
   )
 }
 
-function OptionsSection() {
+function OptionsButtons() {
   const [selectedButton, setSelectedButton] = useState(null);
   
     const handleSelection = function(id) {
@@ -27,6 +29,7 @@ function OptionsSection() {
 
   return (
     <>
+    <div className='options-div'>
       <OptionsButton
         text="Donate"
         id="donate"
@@ -34,20 +37,20 @@ function OptionsSection() {
         selected={selectedButton === "donate" ? "selected" : ""}
       />
       <OptionsButton
-        text="Additional Information"
-        id="info"
-        onClick={handleSelection}
-        selected={selectedButton === "info" ? "selected" : ""}
-      />
-      <OptionsButton
         text="About this Fundraise"
         id="about"
         onClick={handleSelection}
         selected={selectedButton === "about" ? "selected" : ""}
       />
+    </div>
+    <div className='selected-wrapper'>
+      {selectedButton === "donate" ? <Donate/> : ""}
+      {selectedButton === "about" ? <About/> : ""}
+    </div>
     </>
   )
+
 }
 
 
-export default OptionsSection
+export default OptionsButtons 
